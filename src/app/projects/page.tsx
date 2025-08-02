@@ -141,6 +141,10 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        <span className="mt-10 block text-center text-gray-500 dark:text-gray-400">
+          &copy; All Titles and Logos are Copyrighted by their respective owners.
+        </span>
       </div>
     </main>
   );
