@@ -10,7 +10,7 @@ export default function Nav() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Image
-            src="https://avatars.githubusercontent.com/u/93744673?s=200&v=4"
+            src="/hoc-icon.png"
             className="rounded-full h-7"
             alt="Hall of Codes Logo"
             width={28}

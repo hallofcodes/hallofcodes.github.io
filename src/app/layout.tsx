@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +19,31 @@ export const metadata: Metadata = {
   title: "Hall of Codes - Merging Programmers Beyond Conflicts",
   description:
     "Be part of a vibrant community where innovation thrives and collaboration is key.",
+  keywords: [
+    "Hall of Codes",
+    "programming",
+    "collaboration",
+    "community",
+    "innovation",
+    "open source",
+    "software development",
+    "tech community",
+    "developer community",
+    "programmer collaboration",
+    "coding",
+    "software projects",
+    "teamwork",
+    "conflict resolution",
+    "synergy",
+    "collective innovation",
+    "diverse talents",
+    "seamless collaboration",
+    "unity",
+    "progress",
+    "merging programmers",
+    "conflict-free development",
+    "project management",
+  ],
   openGraph: {
     title: "Hall of Codes - Merging Programmers Beyond Conflicts",
     description:
@@ -63,6 +89,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="hostname" content="hallofcodes.github.io" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
