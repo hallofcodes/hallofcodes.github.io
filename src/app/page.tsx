@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const timeline = [
   {
@@ -82,11 +83,11 @@ export default function Home() {
           conflicts dissolve, and collaboration flourishes. Experience the
           synergy of innovation and unity with Hall of Codes.
         </p>
-        <a
-          href="#"
+        <Link
+          href="https://github.com/hallofcodes/join"
           className="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline"
         >
-          Learn more
+          Invite me
           <svg
             className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
             aria-hidden="true"
@@ -102,7 +103,7 @@ export default function Home() {
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </Link>
       </div>
 
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -117,8 +118,8 @@ export default function Home() {
             real impact in the world of technology.
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a
-              href="#"
+            <Link
+              href="https://github.com/hallofcodes/join"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get started
@@ -137,7 +138,7 @@ export default function Home() {
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 

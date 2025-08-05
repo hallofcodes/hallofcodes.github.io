@@ -3,6 +3,13 @@ import Link from "next/link";
 
 const projects = [
   {
+    name: "Ulisha Store",
+    description:
+      "A modern e-commerce platform built with Next.js and Tailwind CSS, featuring a sleek design, responsive layout, and user-friendly interface. It showcases products, allows for easy navigation, and provides a seamless shopping experience.",
+    author: "@ulishastore",
+    website: "https://ulishastore.com",
+  },
+  {
     name: "The New HOC",
     description:
       "A modern, responsive, and user-friendly website for Hall of Codes, built with Next.js and Tailwind CSS. It serves as a platform to showcase our community, projects, and resources for developers.",
@@ -93,27 +100,29 @@ export default function Projects() {
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
                 {project.description}
               </p>
-              <Link
-                href={`https://github.com/${project.github}`}
-                className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-              >
-                Source
-                <svg
-                  className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
+              {project.github && (
+                <Link
+                  href={`https://github.com/${project.github}`}
+                  className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
                 >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </Link>{" "}
+                  Source
+                  <svg
+                    className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </Link>
+              )}{" "}
               &nbsp;
               {project.website && (
                 <Link
@@ -143,7 +152,8 @@ export default function Projects() {
         </div>
 
         <span className="mt-10 block text-center text-gray-500 dark:text-gray-400">
-          &copy; All Titles and Logos are Copyrighted by their respective owners.
+          &copy; All Titles and Logos are Copyrighted by their respective
+          owners.
         </span>
       </div>
     </main>
