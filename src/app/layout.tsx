@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Head from "next/head";
 import NextTopLoader from "nextjs-toploader";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const latoSans = Lato({
+  variable: "--font-lato-sans",
+  weight: ["400", "700"],
+  display: "swap",
   subsets: ["latin"],
 });
 
@@ -94,7 +91,7 @@ export default function RootLayout({
         <meta name="hostname" content="hallofcodes.github.io" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${latoSans.variable} antialiased`}
       >
         <Nav />
         <NextTopLoader showSpinner={false} color="#FF6600" />
