@@ -14,6 +14,7 @@ const latoSans = Lato({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hallofcodes.github.io"),
   title: "Hall of Codes - Merging Programmers Beyond Conflicts",
   description:
     "Be part of a vibrant community where innovation thrives and collaboration is key.",
