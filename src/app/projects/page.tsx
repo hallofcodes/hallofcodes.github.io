@@ -3,63 +3,34 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "Ulisha Store",
+    name: "Sprint Sight",
     description:
-      "A modern e-commerce platform built with Next.js and Tailwind CSS, featuring a sleek design, responsive layout, and user-friendly interface. It showcases products, allows for easy navigation, and provides a seamless shopping experience.",
-    author: "@ulishastore",
-    website: "https://ulishastore.com",
+      "A dashboard that visualizes module status and GitHub commit activity.",
+    github: "sprintsight",
   },
   {
     name: "The New HOC",
     description:
       "A modern, responsive, and user-friendly website for Hall of Codes, built with Next.js and Tailwind CSS. It serves as a platform to showcase our community, projects, and resources for developers.",
-    author: "@mrepol742",
-    github: "hallofcodes/hallofcodes.github.io",
+    github: "hallofcodes.github.io",
     website: "https://hallofcodes.github.io",
-  },
-  {
-    name: "Canis Chatbot",
-    description:
-      "A scalable, modular WhatsApp chatbot built in TypeScript. It leverages modern best practices, lean architecture, Prisma ORM, Dockerization, and environment-based configuration to deliver a robust, flexible successor to Orion.",
-    author: "@mrepol742",
-    github: "mrepol742/canis-chatbot",
-    website: "https://www.melvinjonesrepol.com/projects/canis-chatbot",
-  },
-  {
-    name: "phpspa",
-    description:
-      "A lightweight, component-based PHP library for building Single Page Applications (SPAs) without relying on heavy frontend frameworks.",
-    author: "@dconco",
-    github: "dconco/phpspa",
-    website: "https://phpspa.readthedocs.io",
   },
   {
     name: "bemyvalentine",
     description: "",
-    author: "@hadestia",
-    github: "hallofcodes/bemyvalentine",
+    github: "bemyvalentine",
   },
   {
     name: "Hall of Codes",
     description:
       "A community-driven platform for developers to share knowledge, collaborate on projects, and enhance their coding skills.",
-    author: "@mrepol742",
-    github: "hallofcodes/hallofcodes-vue",
+    github: "hallofcodes-vue",
     website: "https://hallofcodes.github.io",
-  },
-  {
-    name: "Orion Chatbot",
-    description:
-      "Meet the lightning-fast Facebook Messenger chatbot, seamlessly managing multiple accounts with access to 271 commands.",
-    author: "@mrepol742",
-    github: "mrepol742/project-orion",
-    website: "https://www.melvinjonesrepol.com/projects/orion-chatbot",
   },
   {
     name: "2022-Countdown",
     description: "2022 New Year End Countdown by Salaudeen Jami",
-    author: "@salaudeenjami",
-    github: "hallofcodes/2022-countdown",
+    github: "2022-countdown",
   },
 ];
 
@@ -82,7 +53,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12"
+              className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8"
             >
               <Image
                 src={`https://avatars.githubusercontent.com/${project.name}?s=192`}
@@ -91,9 +62,6 @@ export default function Projects() {
                 width={192}
                 height={192}
               />
-              <span className="mt-10 bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
-                {project.author}
-              </span>
               <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
                 {project.name}
               </h2>

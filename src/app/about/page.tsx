@@ -6,14 +6,14 @@ const organizationChart = [
     position: "Founder",
     name: "Melvin Jones Repol",
     username: "mrepol742",
-    bio: "Freelance Software Engineer | DevOps",
+    bio: "Software Engineer",
     website: "https://www.melvinjonesrepol.com",
   },
   {
     position: "Co-Founder",
     name: "Samiun Nafis",
     username: "samiunnafis",
-    bio: "Frontend Developer | UI/UX Designer",
+    bio: "UI/UX Designer",
     website: "https://samiunnafiss.github.io",
   },
 ];
@@ -75,7 +75,7 @@ export default function About() {
                 {member.bio}
               </p>
               <Link
-                href=""
+                href={member.website}
                 className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
               >
                 Website
