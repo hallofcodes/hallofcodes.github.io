@@ -91,12 +91,10 @@ export default function RootLayout({
       <Head>
         <meta name="hostname" content="hallofcodes.github.io" />
       </Head>
-      <body
-        className={`${latoSans.variable} antialiased`}
-      >
+      <body className={`${latoSans.variable} antialiased`}>
         <Nav />
         <NextTopLoader showSpinner={false} color="#FF6600" />
-        {children}
+        <main className="bg-white dark:bg-gray-900 px-4">{children}</main>
         <Footer />
       </body>
     </html>

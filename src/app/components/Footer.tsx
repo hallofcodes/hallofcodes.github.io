@@ -24,6 +24,16 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Notable Projects
               </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-1">
+                  <Link
+                    href="https://github.com/hallofcodes/sprintsight"
+                    className="hover:underline"
+                  >
+                    Sprint Sight
+                  </Link>
+                </li>
+              </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
@@ -31,7 +41,10 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-1">
-                  <Link href="/community-guidelines" className="hover:underline">
+                  <Link
+                    href="/community-guidelines"
+                    className="hover:underline"
+                  >
                     Community Guidelines
                   </Link>
                 </li>

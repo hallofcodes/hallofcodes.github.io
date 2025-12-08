@@ -70,7 +70,7 @@ export default function Projects() {
               </p>
               {project.github && (
                 <Link
-                  href={`https://github.com/${project.github}`}
+                  href={`https://github.com/hallofcodes/${project.github}`}
                   className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
                 >
                   Source
