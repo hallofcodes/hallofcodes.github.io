@@ -33,6 +33,14 @@ export default function Footer() {
                     Sprint Sight
                   </Link>
                 </li>
+                <li className="mb-1">
+                  <Link
+                    href="https://github.com/hallofcodes/devpulse"
+                    className="hover:underline"
+                  >
+                    Devpulse
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>

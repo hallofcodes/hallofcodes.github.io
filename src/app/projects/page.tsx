@@ -3,6 +3,12 @@ import Link from "next/link";
 
 const projects = [
   {
+    name: "DevPulse",
+    description:
+      "Measure and share your coding productivity with personalized leaderboards.",
+    github: "devpulse",
+  },
+  {
     name: "Sprint Sight",
     description:
       "A dashboard that visualizes module status and GitHub commit activity.",
@@ -55,13 +61,13 @@ export default function Projects() {
               key={index}
               className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8"
             >
-              <Image
+              {/*<Image
                 src={`https://avatars.githubusercontent.com/${project.name}?s=192`}
                 className="rounded-full mb-4"
                 alt="Project Photo"
                 width={192}
                 height={192}
-              />
+              />*/}
               <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
                 {project.name}
               </h2>

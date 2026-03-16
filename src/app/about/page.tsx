@@ -14,7 +14,7 @@ const organizationChart = [
     name: "Samiun Nafis",
     username: "samiunnafis",
     bio: "UI/UX Designer",
-    website: "https://samiunnafiss.github.io",
+    website: "https://samiunnafis.github.io",
   },
 ];
 
